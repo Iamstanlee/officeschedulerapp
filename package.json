@@ -1,0 +1,60 @@
+{
+  "name": "officeschedulerapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start-ios": "react-native run-ios && npm run lint-watch",
+    "start-android": "react-native run-android && npm run lint-watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --write \"*.js\"",
+    "start": "NODE_ENV='development' node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "acorn-jsx": "^5.0.1",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-airbnb": "^3.2.0",
+    "babel-preset-react-native": "^4.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-watch": "^5.0.1",
+    "moment": "^2.24.0",
+    "prettier": "^1.16.4",
+    "prop-types": "^15.7.2",
+    "react": "16.6.3",
+    "react-native": "0.58.6",
+    "react-native-button": "^2.3.0",
+    "react-native-calendars": "^1.68.0",
+    "react-native-check-box": "^2.1.7",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-hr-component": "^2.0.2",
+    "react-native-status-bar-height": "^2.3.1",
+    "react-navigation": "^3.3.2",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.3.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "24.3.1",
+    "metro-react-native-babel-preset": "0.53.0",
+    "react-test-renderer": "16.6.3"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts"
+    ]
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
